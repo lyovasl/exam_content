@@ -1,0 +1,7 @@
+.user_card {
+  display: flex;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
