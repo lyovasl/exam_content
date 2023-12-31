@@ -1,11 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Users from "@/components/Users";
+"use client";
+import React from "react";
+import style from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+type Props = {};
+
+const Home = (props: Props) => {
   return (
-    <main className={styles.main}>
-      <Users />
-    </main>
+    <div>
+      <h1>Welcome Home Page!!!</h1>
+      <Link href="/users">Users</Link>
+    </div>
   );
-}
+};
+
+export default Home;
